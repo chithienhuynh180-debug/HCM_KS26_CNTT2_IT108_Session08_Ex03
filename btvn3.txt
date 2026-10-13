@@ -1,0 +1,9 @@
+Phần 1: Phân tích
+
+Get-Content server.log  ->  Select-String "TIMEOUT"  ->  Where-Object { $_ -notmatch "NOT TIMEOUT" }  ->  .Count  ->  1 con số
+
+powershell truyền object nên chỉ cần .Count là ra số lượng, không cần wc -l như bash.
+
+Phần 2: Triển khai
+
+(Get-Content server.log | Select-String "TIMEOUT" | Where-Object { $_ -notmatch "NOT TIMEOUT" }).Count
