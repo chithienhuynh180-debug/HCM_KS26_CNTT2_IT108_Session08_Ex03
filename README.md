@@ -1,5 +1,5 @@
 # Tìm từ khóa trong file 
-**1. Mục đích: đọc nội dung file `audit_login.log` xong lọc các dòng có `ERROR` và đếm kết quả *(qua đường ống Pipeline | )***
+**1. Mục đích: Đọc nội dung file `audit_login.log` xong lọc các dòng có `ERROR` và đếm kết quả *(qua đường ống Pipeline | )***
 
 **2. Phân tích**
   - HĐH PowerShell
